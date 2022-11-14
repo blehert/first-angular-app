@@ -1,0 +1,58 @@
+<div class="border border-secondary mt-5 rounded">
+  <ul class="nav nav-fill">
+    <li class="nav-item border border-dark rounded">
+      <a
+        class="nav-link"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="['/navigator']"
+        [queryParams]="{ tab: 0 }"
+        >Income</a
+      >
+    </li>
+    <li class="nav-item border border-dark rounded">
+      <a
+        class="nav-link"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="['/navigator']"
+        [queryParams]="{ tab: 1 }"
+        >Outcome</a
+      >
+    </li>
+    <li class="nav-item border border-dark rounded">
+      <a
+        class="nav-link"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="['/navigator']"
+        [queryParams]="{ tab: 2 }"
+        >Loans</a
+      >
+    </li>
+    <li class="nav-item border border-dark rounded">
+      <a
+        class="nav-link"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="['/navigator']"
+        [queryParams]="{ tab: 3 }"
+        >Investments</a
+      >
+    </li>
+  </ul>
+  <table class="table table-sm text-center">
+    <thead>
+      <tr>
+        <th scope="col" class="font-weight-normal w-50 bt-n pt-5">Name</th>
+        <th scope="col" class="font-weight-normal bt-n pt-5">Acounts</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name.first }} {{ user.name.last }}</td>
+        <td>{{ user.amount }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

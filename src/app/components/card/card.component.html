@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="w-45 ml-15 mt-8">
+    <div class="card border-secondary">
+      <div class="card-body">
+        <h5 class="card-title font-weight-bold">{{ income.length }}</h5>
+        <p class="card-text">Income</p>
+        <a
+          [routerLink]="['/navigator']"
+          [queryParams]="{ tab: 0 }"
+          class="btn btn-primary font-weight-bold w-75 ml-50"
+          >See all</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="w-45 ml-10 mt-8">
+    <div class="card border-secondary">
+      <div class="card-body">
+        <h5 class="card-title font-weight-bold">{{ investment.length }}</h5>
+        <p class="card-text">Investments</p>
+        <a
+          [routerLink]="['/navigator']"
+          [queryParams]="{ tab: 3 }"
+          class="btn btn-primary font-weight-bold w-75 ml-50"
+          >See all</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="w-45 ml-15 mt-8">
+    <div class="card border-secondary">
+      <div class="card-body">
+        <h5 class="card-title font-weight-bold">{{ outcome.length }}</h5>
+        <p class="card-text">Outcome</p>
+        <a
+          [routerLink]="['/navigator']"
+          [queryParams]="{ tab: 1 }"
+          class="btn btn-primary font-weight-bold w-75 ml-50"
+          >See all</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="w-45 ml-10 mt-8">
+    <div class="card border-secondary">
+      <div class="card-body">
+        <h5 class="card-title font-weight-bold">{{ loan.length }}</h5>
+        <p class="card-text">Loans</p>
+        <a
+          [routerLink]="['/navigator']"
+          [queryParams]="{ tab: 2 }"
+          class="btn btn-primary font-weight-bold w-75 ml-50"
+          >See all</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
